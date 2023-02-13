@@ -3,9 +3,12 @@
   "version": "2.0.0",
   "description": "Node.js authentication with Passport",
   "main": "app.js",
+  "homepage": "http://camilin18.github.io/ProyectoWeb",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +21,7 @@
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.15.6",
+    "gh-pages": "^5.0.0",
     "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
